@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projects</title>
+
+</head>
+<body>
+	<div>
+		<a href="index.html">Home</a>
+		<a href="projects.html">Projects</a>
+		<a href="resume.html">Resume</a>
+	</div>
+	<div>
+		<h1> Projects </h1>
+		<div>
+			<h2> Fall 2018 </h2>
+			<div>
+				<h3> Intuit Text Summarization Consulting Project | Machine Learning @ Berkeley </h3>
+				<p>
+					Along with a few other members of ML@B, I am currently working
+					on a consulting project for Intuit with the goal being to help
+					them effectively summarize internal documents using various ML
+					algorithms.  The idea is that through summarization one can 
+					efficiently access, organize, and understand large documents.
+				</p>
+				<p>
+					We began the project early September by conducting literature
+					review to gain a better understanding of how we could approach
+					our task.  Although, we were unable to access to the companies
+					internal dataset, our points of contact at Intuit suggested that
+					we use NYT Annotated Corpus and the CNN/Daily Mail datasets.
+					After reading numerous papers, I spent a few weeks parsing and
+					analyzing the data from the two sources.  Additionally I used
+					Word2Vec to generate word embeddings for the words in the data.
+				</p>
+				<p>
+					My next task was to implement SummaRuNNer a state of the art model
+					described <a href="https://arxiv.org/pdf/1611.04230.pdf">here</a>.
+					Using TensorFlow I was able to fully implement the model and both
+					the extractive and abstractive methods of training.
+
+					The project is on schedule to complete by the end of November.
+				</p>
+				<h3> This Website! </h3>
+				<p>
+					I am a member of the Web Development Committee of the Regents' and 
+					Chancellor's Scholar Association at Berkeley.  As a new member
+					on the committee I learned essential HTML/CSS skills and applied
+					them in creating this personal website.
+				</p>
+			</div>
+			<h2> Summer 2018 </h2>
+			<div>
+				<p> Inspired by the neural network implemenation I created in the Spring,
+					I decided to further explore the area by implementing other more complex
+					ML models entirely from scratch.  My goal was to fully understand the theory
+					behind these models and for this I felt nothing was better than implementing
+					it on my own.  Along the way I created corresponding library implementations 
+					using either TensorFlow or scikit-learn to compare the efficiency and performance 
+					of the models.
+				</p>
+				<h3> English Text Generation using Recurrent Neural Networks and LSTM’s </h3>
+				<p>
+					One of these projects to generate English Text by implementing and 
+					training various neural models.  I began by implementing a Reccurent
+					Neural Network from scratch which accepted characters as input and at
+					each time step outputted a probability distribution for the next character.
+					I trained this model using a large dataset of words, and was excited to see
+					the model learning the syntactic regularities of English words and generating
+					strings that phonetically made sense.
+					<br>
+					<br>
+					<a href="https://github.com/arjunsripathy/Word_Builder">
+					Link to RNN from scratch </a>
+				</p>
+				<p>
+					I took the project one step further by using TensorFlow to implement a
+					more powerful LSTM model.  With its greater capability to retain long-term
+					dependencies, I decided to use this model to generate entire passages of text
+					as opposed to single words.  I trained the model using a full-length novel and
+					found that it could generate passages that almost seemed as if they could have
+					been from the book.
+					<br>
+					<br>
+					<a href="https://github.com/arjunsripathy/LSTM">
+					Link to TensorFlow LSTM</a>
+				</p>
+				<h3> Image Classification using Convolutional Neural Networks </h3>
+				<p>
+					In this project I explored another very popular architecture Convolutional
+					Neural Networks in the context of image classification.  Again I began by 
+					implementing this model from scratch.  Learning the theory behind the 
+					architecture, I was able to understand how the model could develop a sense 
+					of spatial understanding and robustness.  I applied the model I created to 
+					the commonly used benchmark dataset MNIST  and found that it  could classify 
+					digits at a high level of accuracy.
+					<br>
+					<br>
+					<a href="https://github.com/arjunsripathy/ConvNet">
+					Link to CNN from scratch</a>
+				</p>
+				<p>
+					Next, I used TensorFlow to implement a deeper model, and used it for the
+					same image classification task, but this time on the more complex CIFAR-10
+					dataset.  Of course, this implementation was more efficient, but I found that
+					my earlier implementation allowed me to truly understand what was happening
+					behind the scenes.
+					<br>
+					<br>
+					<a href="https://github.com/arjunsripathy/CIFAR_10_Classification">
+					Link to TensorFlow CNN</a>
+				</p>
+				<h3>Breast Cancer Diagnosis based on various numerical nuclear features</h3>
+				<p>
+					This project was based upon a dataset I found on Kaggle that provided
+					various numerical features for different cases of cancer as well as whether
+					the cancer was benign or malignant.  I aimed to predict malignant or benign
+					based on the features supplied in the dataset.  In this project I 
+					experimented with a number of different ML model implementations.
+					I created both a decision tree and random forests algorithm from scratch and
+					compared it with my own implementation of a vanilla neural network.
+					<br>
+					<br>
+					<a href="https://github.com/arjunsripathy/Breast_Cancer_Dataset_Classifcation">
+					Link to Code </a>
+				</p>
+				<h3>Titanic Data Analysis and Visualization</h3>
+				<p>
+					This is another project I based of a dataset from Kaggle.  The dataset provided
+					numerous characteristics of passengers aboard the Titanic as well as whether
+					or not the passenger survived the disaster.  In this project I work with the data
+					in a number of different ways.  I visualize different correlations, engineer new
+					features, clear out missing data, and more.
+					<br>
+					<br>
+					<a href="https://github.com/arjunsripathy/Titanic_Data_Analysis_and_Visualization">
+					Link to Code </a>
+				</p>
+			</div>
+			<h2> Spring 2018 </h2>
+			<div>
+				<h3> Implemenation of a Feed-Forward Neural Network </h3>
+				<p> 
+					During Summer 2017, I learned the theory and mathematics behind basicneural
+					networks—from the network architecture to the backpropogation algorithm that
+					allowed the model to learn optimal weights.
+				</p>
+				<p>
+					This Spring I completed a Coursera course on Neural Networks for Machine Learning 
+					and the final project was to an elementary Feed-Forward Neural Network from scratch
+					that involved an input layer, a hidden layer, and one softmax output layer.  The
+					framework of the program was supplied, but I had to program the actual logic from
+					scratch.
+				</p>
+				<h3> FIRST Robotics Competition Game Score Predictor </h3>
+				<p>
+					I participated in FIRST Robotics for 7 years, but every year I learned something
+					new and applied my knowledge in different ways.  This is a project I worked on
+					during my final year which aimed to predict the scores of future matches and thus
+					streamline the process for selecting alliance partners during the playoff stage
+					of the competition.
+				</p>
+				<p>
+					The model itself was a neural network implemented using Tensorflow which aimed
+					to predict the match score given the participating teams and various statistics.
+					Various techniques were used to improve performance in training and usage from
+					regularization methods such as dropout and weight penalties to training tehcniques
+					such as momentum and mini-batch learning.  Ultimately we were able to provide
+					significant insight into the result of the match before it actually took place.
+				</p>
+			</div>
+	</div>
+</body>
+</html>
